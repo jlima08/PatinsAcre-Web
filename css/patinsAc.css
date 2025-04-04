@@ -133,34 +133,58 @@ main #bemvindo > p{
     width: 100%;
     height: auto;
     background-position: center;
+    -webkit-background-position:center ;
     background-repeat: no-repeat;
+    -webkit-background-repeat: no-repeat;
     background-size: contain;
+    -webkit-background-size: contain;
     background-attachment: fixed;
+    -webkit-background-attachment:fixed ;
     box-shadow: 1px 1px 20px 5px #dfdfdf;
 }
 
 #quemSomos > section:nth-of-type(1){
     background-image: url(imagens/patinsacreLogo.jpeg);
+    -webkit-background-image: url(imagens/patinsacreLogo.jpeg) ;
     height: 800px;
 }
 
 #quemSomos > section:nth-of-type(2){
     background-image: url(imagens/paisagem\ 1.jpeg);
+    -webkit-background-image: url(imagens/paisagem\ 1.jpeg) ;
     height: 800px;
 }
 
 #quemSomos > section:nth-of-type(3){
     background-image: url(imagens/urbanKinari.jpeg);
+    -webkit-background-image: url(imagens/urbanKinari.jpeg) ;
     height: 800px;
 }
 
 #quemSomos > section:nth-of-type(4){
     background-image: url(imagens/skatepark.jpeg);
+    -webkit-background-image: url(imagens/skatepark.jpeg) ;
     height: 700px;
 }
 #quemSomos > section:nth-of-type(5){
     background-image: url(imagens/sorriso.jpeg);
+    -webkit-background-image: url(imagens/sorriso.jpeg) ;
     height: 800px;
+}
+#quemSomos > section:nth-of-type(6){
+    background-image: url(imagens/confra.jpeg);
+    -webkit-background-image: url(imagens/confra.jpeg) ;
+    height: 600px;
+}
+#quemSomos > section:nth-of-type(7){
+    background-image: url(imagens/hallowenn.jpeg);
+    -webkit-background-image: url(imagens/hallowenn.jpeg) ;
+    height: 600px;
+}
+#quemSomos > section:nth-of-type(8){
+    background-image: url(imagens/havan.jpeg);
+    -webkit-background-image: url(imagens/havan.jpeg) ;
+    height: 600px;
 }
 /* fim do paralax */
 
@@ -248,10 +272,13 @@ footer{
     #quemSomos > section:nth-of-type(4),
     #quemSomos > section:nth-of-type(5){
         
-        height: 400px;
+        height: 450px;
     }
-    #quemSomos > section:nth-of-type(3){
-        height: 300px;
+    #quemSomos > section:nth-of-type(3),
+    #quemSomos > section:nth-of-type(6),
+    #quemSomos > section:nth-of-type(7),
+    #quemSomos > section:nth-of-type(8){
+        height: 350px;
     }
 
     .contatos > .imgwpp{
