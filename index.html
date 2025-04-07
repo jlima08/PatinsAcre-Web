@@ -17,12 +17,16 @@
 
 <body>
   <header>
-    <a href="#bemvindo"><i class="bi bi-house-fill"></i>Início</a>
-    <a href="#quemSomos"><img class="icon" src="css/imagens/person-skating-solid (1).svg" alt="">Quem somos?</a>
-    <a href="#contatos"><i class="bi bi-phone-fill"></i>Contatos</a>
-    <a href="#parcerias"><span class="material-symbols-outlined">
-      handshake
-      </span> Parcerias</a>
+    <i id="openMenu" onclick="onMenu()" class="bi bi-list"></i>
+    <i id="closeMenu" onclick="clMenu()" class="bi bi-x-lg"></i>
+    <menu id="menu">
+      <a href="#bemvindo"><i class="bi bi-house-fill"></i>Início</a>
+      <a href="#quemSomos"><img class="icon" src="css/imagens/person-skating-solid (1).svg" alt="">Quem somos?</a>
+      <a href="#contatos"><i class="bi bi-phone-fill"></i>Contatos</a>
+      <a href="#parcerias"><span class="material-symbols-outlined">
+        handshake
+        </span> Parcerias</a>
+    </menu>
   </header>
 
   <main>
@@ -179,12 +183,14 @@
       <h2><span class="material-symbols-outlined">roller_skating</span> Parcerias</h2>
 
       <div class="imgs">
-        <img src="css/parcerias/GO ROLLER LOGO NOVO.jpg" alt="Go Roller">
-        <img src="css/parcerias/Bestrong.png" alt="Bestrong">
-        <img src="css/parcerias/JARUDE - LOGO ROXA.png" alt="JARUDE">
-        <img src="css/parcerias/LogoMarca Portomaq.png" alt="Portomaq">
-        <img src="css/parcerias/CARTEIRA .jpg" alt="Dra Manoela Lopes">
-        <img src="css/parcerias/Material de Eletrico  Zezinho.jpg" alt="Zezinho">
+        
+          <img src="css/parcerias/GO ROLLER LOGO NOVO.jpg" alt="Go Roller">
+          <img src="css/parcerias/Bestrong.png" alt="Bestrong">
+          <img src="css/parcerias/JARUDE - LOGO ROXA.png" alt="JARUDE">
+          <img src="css/parcerias/LogoMarca Portomaq.png" alt="Portomaq">
+          <img src="css/parcerias/CARTEIRA .jpg" alt="Dra Manoela Lopes">
+          <img src="css/parcerias/Material de Eletrico  Zezinho.jpg" alt="Zezinho">
+        
 
       </div>
     </div>
@@ -202,6 +208,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+    <script src="js/patins.js"></script>
 </body>
 
 </html>

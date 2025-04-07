@@ -1,11 +1,4 @@
-@font-face {
-    font-family: 'Font Awesome 6 Free';
-    font-style: normal;
-    font-weight: 900;
-    font-display: block;
-    src: url("../webfonts/fa-solid-900.woff2");
-  }
-  @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+ @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 *{
     padding: 0;
@@ -21,7 +14,12 @@ body{
     gap: 10px;
 }
 
-
+#openMenu, #closeMenu{
+    color: #fff;
+    display: none ;
+    font-weight: 700;
+    cursor: pointer;
+}
 
 header{
     width: 100%;
@@ -34,30 +32,37 @@ header{
     position: fixed;
     margin-bottom: 12px;
     z-index: 3;
-   
-   
-
 }
+
+header > menu{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
 header a{
-     text-decoration: none; 
+    text-decoration: none; 
     color: #fff;
     font-weight: 600;
     display: flex;
     align-items: center;
     gap: 8px;
+    margin-right: 20px;
+    justify-content: center;
 }
+
 header a:hover{
     background-color: #072900;
     padding: 10px;
 }
+
 header .icon{
     width: 20px;
     color: #fff;
    
 }
-/* header i{
-    margin-right: 10px;
-} */
 
 main{
     width: 100%;
@@ -70,6 +75,7 @@ main{
         color: #0b3b00;
     }
 }
+
 #bemvindo{
     width: 100%;
     display: flex;
@@ -81,10 +87,12 @@ main{
     margin-bottom: 20px; */
     margin: 0 auto;
 }
+
 #bemvindo img{
     box-shadow: 1px 1px 20px 5px #555;
     margin-top: 20px;
 }
+
 main #bemvindo > p{
     font-size: 16px;
     font-weight: 500;
@@ -98,8 +106,6 @@ main #bemvindo > p{
 }
 .carrosel{
     width: 40%;
-    
-
 }
 
 .quemSomos{
@@ -107,16 +113,16 @@ main #bemvindo > p{
     display: flex;
     flex-direction: column;
     margin-top: 30px;
-    border-bottom: 1px solid #cfcfcf;
-    
-    
+    border-bottom: 1px solid #cfcfcf; 
 }
+
 #quemSomos  > h2{
     color: #1f1f1f;
     letter-spacing: 2px;
     padding: 12px;
     
 }
+
 #quemSomos  > span{
     padding: 20px;
     background-color: #d1fac8;
@@ -193,10 +199,12 @@ main #bemvindo > p{
     margin: 30px 0;
     padding: 10px;
 }
+
 .contatos > p{
     font-size: 22px;
     margin: 10px;
 }
+
 .contatos > .img{
     width: 100%;
     height: 300px;
@@ -205,6 +213,7 @@ main #bemvindo > p{
     background-image: url(imagens/Captura\ de\ tela_3-4-2025_13312_www.instagram.com.jpeg);
     background-size: contain;
 }
+
 .contatos > .imgwpp{
     width: 100%;
     height: 300px;
@@ -221,6 +230,7 @@ main #bemvindo > p{
     align-items: center;
     flex-wrap: wrap;
 }
+
 .parcerias> h2{
     margin-left: 12px;
     letter-spacing: 2px;
@@ -233,6 +243,7 @@ main #bemvindo > p{
     flex-wrap: wrap;
     gap: 20px;
     box-shadow: 1px 1px 20px 5px #dfdfdf;
+    
     img{
         width: 29%;
         box-shadow: 1px 1px 20px 5px #dfdfdf;
@@ -251,20 +262,43 @@ footer{
     align-items: center;
 }
 
+/* @keyframes menuu{
+    0%{height: 0px; }
+    100%{height: 136px;}
+} */
+
 @media screen and (max-width: 500px){
+
+    #openMenu{
+        display: block;
+        
+    }
+    #menu {
+        flex-direction: column;
+        display: none;
+        /* animation: menuu linear  0.3s; */
+        
+    }
+   
+    header a{
+        text-align: center;
+        margin-bottom: 10px;
+    }
     header{
+        
         flex-direction: column; 
         height: auto;
         flex-wrap: wrap;
         gap: 10px;
         padding: 5px;
+        
     }
     .carrosel{
         width: 100%;
     }
     #bemvindo img{
         height: 500px !important;
-        margin-top: 100px;
+        margin-top: 30px;
     }
 
     #quemSomos > section:nth-of-type(1),
@@ -274,6 +308,7 @@ footer{
         
         height: 450px;
     }
+
     #quemSomos > section:nth-of-type(3),
     #quemSomos > section:nth-of-type(6),
     #quemSomos > section:nth-of-type(7),
