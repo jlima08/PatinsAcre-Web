@@ -64,6 +64,16 @@ header .icon{
    
 }
 
+.slide-patins{
+    color: #0b3b00;
+    width: 100%;
+    span{
+        animation: slide linear infinite 2s;
+       
+    }
+    
+}
+
 main{
     width: 100%;
     
@@ -81,7 +91,6 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
     border-bottom: 1px solid #cfcfcf;
     /* margin-top: 12px;
     margin-bottom: 20px; */
@@ -91,6 +100,23 @@ main{
 #bemvindo img{
     box-shadow: 1px 1px 20px 5px #555;
     margin-top: 20px;
+}
+
+#bemvindo h3{
+    padding: 12px;
+    color: #0b3b00;
+    font-family: Winky Rough;
+    font-weight: 550;
+}
+
+#bemvindo .htag{
+    display: flex;
+    gap: 14px;
+    p{
+        animation: htag linear infinite 2s;
+        font-size: 14px;
+        color: #0b3b00;
+    }
 }
 
 main #bemvindo > p{
@@ -120,6 +146,8 @@ main #bemvindo > p{
     color: #1f1f1f;
     letter-spacing: 2px;
     padding: 12px;
+    font-family: Winky Rough;
+    font-weight: 550;
     
 }
 
@@ -131,6 +159,7 @@ main #bemvindo > p{
     font-size: 20px;
     margin: 0 auto ;
     width: 100%;
+    font-family: Quicksand;
 
 }
 
@@ -144,8 +173,8 @@ main #bemvindo > p{
     -webkit-background-repeat: no-repeat;
     background-size: contain;
     -webkit-background-size: contain;
-    background-attachment: fixed;
-    -webkit-background-attachment:fixed ;
+    background-attachment: scroll;
+    -webkit-background-attachment: scroll;
     box-shadow: 1px 1px 20px 5px #dfdfdf;
 }
 
@@ -156,7 +185,7 @@ main #bemvindo > p{
 }
 
 #quemSomos > section:nth-of-type(2){
-    background-image: url(imagens/paisagem\ 1.jpeg);
+    background-image: url(imagens/paisagem1.jpeg);
     -webkit-background-image: url(imagens/paisagem\ 1.jpeg) ;
     height: 800px;
 }
@@ -200,9 +229,50 @@ main #bemvindo > p{
     padding: 10px;
 }
 
+.contatos > h2{
+    font-family: Winky Rough;
+    font-weight: 550;
+    text-align: left;
+    width: 100%;
+}
+
 .contatos > p{
     font-size: 22px;
     margin: 10px;
+}
+
+.contatos > button{
+    width: 200px;
+    font-weight: 600;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 12px;
+    box-shadow: 1px 1px 10px 1px #747474;
+}
+
+.contatos > .insta{
+    background: linear-gradient( #405de6, #833ab4, #c13584, #f77737, #fcaf45 );
+    a{
+        color: #fff;
+        text-decoration:none ;
+    }
+}
+
+.contatos > .wpp{
+    padding: 10px;
+    background-color: #0b3b00;
+    a{
+        color: #fff;
+        text-decoration:none ;
+    }
+
+}
+
+.contatos > button:hover{
+    box-shadow: 1px 1px 15px 1px #0c0c0c;
+    scale: 1.1;
 }
 
 .contatos > .img{
@@ -234,6 +304,8 @@ main #bemvindo > p{
 .parcerias> h2{
     margin-left: 12px;
     letter-spacing: 2px;
+    font-family: Winky Rough;
+    font-weight: 550;
 }
 
 .parcerias > .imgs{
@@ -262,10 +334,16 @@ footer{
     align-items: center;
 }
 
-/* @keyframes menuu{
-    0%{height: 0px; }
-    100%{height: 136px;}
-} */
+/* animação das hastags */
+@keyframes htag{
+    100%{scale: 1.1; rotate: 2deg;}
+} 
+
+/* animaçao do icone do patins */
+@keyframes slide{
+    100%{margin-left: 95%;} 
+}
+
 
 @media screen and (max-width: 500px){
 
@@ -318,6 +396,13 @@ footer{
 
     .contatos > .imgwpp{
         background-position: center;
+    }
+
+    .contatos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     
     
