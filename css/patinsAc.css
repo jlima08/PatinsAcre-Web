@@ -221,6 +221,11 @@ main #bemvindo > p{
     -webkit-background-image: url(imagens/havan.jpeg) ;
     height: 600px;
 }
+#quemSomos > section:nth-of-type(9){
+    background-image: url(imagens/diadopatins.jpeg);
+    -webkit-background-image: url(imagens/diadopatins.jpeg) ;
+    height: 600px;
+}
 /* fim do paralax */
 
 .contatos{
@@ -390,7 +395,9 @@ footer{
     #quemSomos > section:nth-of-type(3),
     #quemSomos > section:nth-of-type(6),
     #quemSomos > section:nth-of-type(7),
-    #quemSomos > section:nth-of-type(8){
+    #quemSomos > section:nth-of-type(8),
+    #quemSomos > section:nth-of-type(9)
+     {
         height: 350px;
     }
 
