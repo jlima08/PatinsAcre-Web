@@ -66,9 +66,9 @@ header .icon{
 
 .slide-patins{
     color: #0b3b00;
-    width: 100%;
+    width: 96%;
     span{
-        animation: slide linear infinite 2s;
+        animation: slide linear infinite 5s;
        
     }
     
