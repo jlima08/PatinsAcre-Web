@@ -412,10 +412,11 @@ footer{
     }
     .carrosel_booststrap{
         width: 100% ;
+        margin-top: 5px;
     }
     #bemvindo img{
         height: 500px !important;
-        margin-top: 30px;
+        
     }
     #quemSomos  > section > video{
     width: 100%;
